@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html></html>
+
+<head></head>
+<body>
+  <p id="error"></p>
+  <script>
+    try {
+      document.getElementById("error").innerHTML = number
+    }
+
+    catch (err){
+      document.getElementById("error").innerHTML = err.message;''
+    }
+  </script>
+</body>
