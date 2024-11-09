@@ -1,0 +1,23 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="result"></p>
+    <button onclick ="descending()"  id ="descending">Descending Order</button>
+    <button onclick ="ascending()"  id ="acsending">Ascending Order</button>
+    <script>
+      var number=[65 ,12 ,3 ,78 ,45 ,90 ,100 ,76 ,163];
+      document.getElementById("result").innerHTML =number;
+      function ascending () {
+        number.sort(function(a,b){return a-b});
+        document.getElementById("result").innerHTML=number;
+      }
+      function descending (){
+        number.sort(function(a,b){return b-a});
+        document.getElementById("result").innerHTML= number;
+      }
+      var newarray =points.map(ascending)
+      var newarray =points.map(descending)
+    </script>
+  </body>
+</html>
